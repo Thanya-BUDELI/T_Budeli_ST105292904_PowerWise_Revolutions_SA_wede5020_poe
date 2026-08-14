@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Electricity Saving Tips</title>
+    </head>
+    <body>
+        <header>
+            <h1>Electricity Saving Tips</h1>
+
+            <nav>
+            <ul>
+              <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="inquiry.html">Inquiry</a>
+                    </li>
+                    <li>
+                        
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a></li>
+
+                        <li>
+                        <a href="ElectricitySavingTips.html">Electricity Saving Tips</a>
+             </ul>
+            </nav>
+</header>
+<main>
+    <section>
+             <h2>Electricity Saving Tips</h2>
+            <ul>
+       <li>Turn off lights and appliances when not in use.</li>
+                
+    <li>Unplug chargers and electronics when not in use.</li>
+
+     <li>Use natural light during the day.</li>  
+    </section>
+    <section>
+                
+    </section>
+    </main>
+<footer>
+       
+    </footer>
+  </body>
+</html>
