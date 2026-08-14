@@ -72,6 +72,7 @@ Final Submission	Week10
  
 ## Sitemap
 
+<img width="2511" height="1807" alt="image" src="https://github.com/user-attachments/assets/7fe98571-ffcf-4816-b94d-5c85b1752e5a" />
 
 
 
