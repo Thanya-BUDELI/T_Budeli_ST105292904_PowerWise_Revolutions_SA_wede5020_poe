@@ -74,5 +74,17 @@ Final Submission	Week10
 
 <img width="2511" height="1807" alt="image" src="https://github.com/user-attachments/assets/7fe98571-ffcf-4816-b94d-5c85b1752e5a" />
 
+## References
+
+OpenAI ChatGPT was used as a learning and development aid during the creation of the PowerWise Revolutions SA website. It was used to explain HTML concepts, provide guidance on website structure, troubleshoot HTML code, and assist with the generation of website imagery. The business concept, website content, product ideas, service ideas and final implementation decisions were developed and selected by the student.
+
+
+Figure 1: PowerWise Revolutions SA home page image. Generated using OpenAI ChatGPT (2026).
+
+
+Figure 2: PowerWise Revolutions SA products image. Generated using OpenAI ChatGPT (2026).
+
+
+
 
 
