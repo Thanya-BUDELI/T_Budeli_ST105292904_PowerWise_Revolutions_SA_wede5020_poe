@@ -1,16 +1,38 @@
 # T_Budeli_ST105292904_PowerWise_Revolutions_SA_wede5020_poe
 
-# Project Title: PowerWise Revolutions SA
+---
+
+# Project Title: 
+
+**PowerWise Revolutions SA**
+-PowerWise Revolutions SA is about helping the middle to lower class especially the elderly who are not knowledgeable on   modern tech and how to assess their daily power/electricity usage and therefore be given tips on how to manage their usage efficiently to save more money
+
+
+---
+
 
 ## Student information
-Student Number: ST10529204
-Student Full Name: Thanya Budeli
-Group: Year 1 Group 04
-Module: Web Development(Introduction)
-Module Code: WEDE5020
+
+|Field | Detail |
+|---|---|
+| Student Number | ST10529204 |
+| Student Full Name | Thanya | Student Full Surname | Budeli |
+| Module Name| Web Development(Introduction)|
+| Module Code| WEDE5020 |
+| Group| Year 1 Group 04 |
+| Lecturer | Deogratias Phiri |
+
+
+---
+
 
 ## Project Overview
+
+
 PowerWise Revolutions SA is a south African Technology centered organisation founded in 2026 with the goal to assit househols mostly middle to lowerclass use electricity more efficiently. This organization keeps the people who are uninterested in understanding the complex graphs and data that display how much electricity is being consumed in a way that it helps them by providing more easier reports to understand and follow and also provides easy ways to make smarter energy decisions
+
+
+---
 
 ## Website Goals and Objectives
 1 Specific Goals
@@ -62,17 +84,41 @@ Contact
 
 ## Timeline and Milestones
 
-Milestone	Target
-Proposal Approved	Week 3
-Research complete	Week 4
-Sitemap Complete	Week 5
-HTML pages built and content integrated	Week 6
-Navigation linked and cross-browser tested	Week 7
-Final Submission	Week10
+| Milestone |	Target Date | Status
+|---|---|---|
+| Planning & Wireframing | 05/08/2026 | Complete |
+| Proposal | 7/08/2026 | Approved | 
+| Research | 10/08/2026 | Complete |
+| Sitemap | 11/08/2026 | Complete |
+| HTML pages built and content integrated | 12/08/2026 | Complete |
+| Navigation linked and cross-browser tested | 13/08/2026 | Complete |
+| Part 1: Submit proposal and Semantic HTML structure | 14/08/2026 | Complete |
+| Add external CSS Styling and mobile responsiveness | 16/09/2026 | Ongoing|
+| Part 2: Submit CSS and responsiveness to website | 18/09/2026 | Planned |
+|Adding Javascript and Interactivity | TBC | Planned |
+| Part 3: Final Testing & Submission | TBC | Planned |
+
  
 ## Sitemap
 
 <img width="2511" height="1807" alt="image" src="https://github.com/user-attachments/assets/7fe98571-ffcf-4816-b94d-5c85b1752e5a" />
+
+## Changelog
+
+
+*Track changes and improvements to the website over time. Add a new entry every time you make a significant update - this should grow and 3. Most recent entry at the top.*
+
+|Date | Version | Change Description | 
+|---|---|---|
+| 10/08/2026 v1.0 | initial repository setup, added folder structure |
+| 12/08/2026 v1.1 | Added Index.html and basic navigation |
+| 14/08/2026 v1.2 | Added about_us html and enquiry.html |
+| 25/08/2026 v1.3 | Added initial style.css |
+| | | *Add new font as the project progresses* |
+
+
+---
+
 
 ## References
 
