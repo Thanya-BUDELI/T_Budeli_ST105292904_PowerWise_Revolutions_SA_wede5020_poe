@@ -88,8 +88,8 @@ Contact
 |---|---|---|
 | Planning & Wireframing | 05/08/2026 | Complete |
 | Proposal | 7/08/2026 | Approved | 
-| Research | 10/08/2026 | Complete |
-| Sitemap | 11/08/2026 | Complete |
+| Research | 10/08/2026 | Approved |
+| Sitemap | 11/08/2026 | Approved |
 | HTML pages built and content integrated | 12/08/2026 | Complete |
 | Navigation linked and cross-browser tested | 13/08/2026 | Complete |
 | Part 1: Submit proposal and Semantic HTML structure | 14/08/2026 | Complete |
@@ -106,7 +106,7 @@ Contact
 ## Changelog
 
 
-*Track changes and improvements to the website over time. Add a new entry every time you make a significant update - this should grow and 3. Most recent entry at the top.*
+*Track changes and improvements to the website over time.*
 
 |Date | Version | Change Description | 
 |---|---|---|
