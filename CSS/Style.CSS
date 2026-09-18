@@ -1,1 +1,346 @@
 *
+/*
+WHAT IS DONE HERE APPLIES TO THE WHOLE WEBSITE
+*/
+
+/*This cleans up the default spacing and sets up default font*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    
+}
+
+
+/*sets up main background colour and font for the body*/
+
+
+/*This makes sure all big heading use a bolder nicer font*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+SCROLLBAR CUSTOMIZATION (Changing how the scrollbar looks)
+*/
+/*this code editsthe width of the scrollbar*/
+::-webkit-scrollbar{
+    width: 18px;
+}
+
+
+/*this code below is to customize the track, where scrolling*/
+::-webkit-scrollbar-track{
+box-shadow: inset 0 0 5px green;
+border-radius: 10px;
+}
+
+/*this code below customizes the handle, which is the scroll bar*/
+::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0);
+    border-radius: 20px; 
+}
+
+/*
+NAVIGATION BAR & HEADER
+*/
+
+/*Styling for the smaller site header box*/
+.site-header{
+    background-color: #ffffff; /*nice white background*/
+    padding: 20px 40px;/*adds space inside the header box*/
+    display: flex;
+  
+}
+
+header {
+    background-color: white; /* background color is to change
+    the background color in your webpage */
+
+    margin: 25px; /* margin is the space outside 
+    the border of an element*/
+
+    padding: 25px; /* padding is the space inside
+    the border of an element*/
+
+    display: flex; /* display is a property that defines
+     how an element is displayed on the page.*/
+
+     justify-content: space-between; /* space-between is a value
+      of the justify-content property that distributes the space between
+       the flex items evenly. */
+
+     align-items: center; /*add this line to center your content in your line vertically*/
+    
+    }
+/*nav bar header*/
+header h1{
+    color: #1b4d3e; /* ADD THIS - header background is white, title needs dark text */
+}
+
+
+body{
+    background-color: #40514b;
+    color: #ffffff;
+}
+
+
+/*navigation menu box*/
+nav{
+    background-color:rgba(255, 255, 255, 0.991);
+}
+
+/*puts menu items side by side*/
+nav ul{
+    display: flex;
+
+/*individual list items inside the menu*/
+}
+nav ul li{
+    color: #052b1c;
+    list-style: none;
+    margin: 10px 20px;
+    height: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*links inside navigation menu*/
+nav ul li a{
+      text-decoration: none;
+    color: #1b4d3e; /*  dark green so it's still visible on the white nav */
+    font-size: 20px;
+}
+
+/*
+HOME PAGE HERO BANNER AND CONTENT
+*/
+
+/*Big background image area at the top of the home page*/
+#hero-section{
+    background-image: url(../Images/Screenshot\ 2026-08-14\ 160252.png);
+    background-repeat: no repeat;/*image shows once*/
+    background-size: cover;
+    background-position: center;
+    opacity: 70%;
+    height: 50vh;
+}
+
+/*centers content inside hero banner*/
+#hero-content{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: larger;
+}
+
+/*text styling inside hero content banner*/
+#hero-content p{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/*spacing for call to action button*/
+#hero-content .call-to-action-btn{
+    margin-top: 20px;
+}
+
+#hero-content .call-to-action-btn a{
+    text-decoration: none;
+    margin: 40px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+/*
+HOME PAGE: MAIN CONTENT AND SECTIONS
+*/
+
+/*centers everything in the main Home page and keeps it neat*/
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+/*styling the big welcome banner area*/
+.hero-section{
+    text-align: center;
+    padding: 60px 20px;
+    width: 100%;
+    background-color: #f2f8f5;
+    font-style: inherit;
+}
+
+/* the main welcome heading inside the hero section*/
+.hero-section h1{
+    font-size: 2.5cm;
+    color: #1b4d3e;
+    margin-bottom: 15px;
+}
+
+/*small text unde the main heading*/
+.hero-section p{
+    color: #1b4d3e
+}
+
+/*decorating the line for neatness to visually break up the page*/
+hr.section-divider{
+    border: none;
+    height: 3px;
+    background-color: #2e7d32;
+    width: 85%;
+    margin: 40px auto;
+    border-radius: 2px;
+}
+
+
+/*EVERYTHING IN THE about_us page*/
+
+#about_us{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(10, 68, 10);
+}
+
+#about_us h2{
+    padding: 15px;
+}
+
+#Summary-section{
+    height: inherit;
+    font-size: larger;
+    
+}
+
+.summary-content img{
+    width: 40%;
+    height: 4%;
+    gap: 50px;
+    margin: 25px;
+    background-image: url(../Images/Screenshot\ 2026-08-14\ 160252.png);
+    background-size: cover;
+}
+
+.Social-media-links{
+    text-align: center;
+    margin-top: 25px;
+}
+.Social-media-links p{
+    font-weight: 400;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.Social-media-links .Socials a{
+    
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* About us image and text to be aside each other */
+.summary-content{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+/* IMAGE CROP  */
+.summary-content img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+   
+}
+
+
+
+/* PSEUDO CLASSES  HOVER, FOCUS, ACTIVE STATES */
+
+/*nav links change colour on hover and show a focus outline for keyboard users*/
+nav ul li a:hover{
+    color: #2f7a5c;
+}
+
+nav ul li a:focus{
+    outline: 2px solid #2f7a5c;
+}
+
+/*social icons brighten slightly on hover*/
+.Social-media-links .Socials a:hover{
+    color: #2f7a5c;
+}
+
+/*inquiry form send button press feedback*/
+button:hover,
+input[type="submit"]:hover{
+    background-color: #2f7a5c;
+    cursor: pointer;
+}
+
+button:active,
+input[type="submit"]:active{
+    background-color: #16261f;
+}
+
+/*Responsive design- tablet*/
+@media (max-width: 766px){
+/*nav links stack vertically instead of side by side*/
+nav ul{
+flex-direction: column;
+align-items: center;
+}
+
+/*product/service cards drop to 2 columns*/
+main section ul,
+.services-list{
+grid-template-columns: repeat(2, 1fr);
+ }
+
+/*about us image and text stack instead of side by side*/
+.summary-content{
+flex-direction: column;
+text-align: center;
+ }
+
+/*hero heading shrinks so it doesn't overflow*/
+.hero-section h1{
+font-size: 1.8rem;
+}
+
+}
+
+/*responsive design for mobile*/
+@media (max-width: 480px){
+/*header stacks title above nav instead of side by side*/
+header{
+flex-direction: column;
+margin: 10px;
+padding: 15px;
+ }
+/*cards go down to a single column*/
+main section ul
+.services-list{
+ grid-template-columns: 1fr;
+ }
+
+.hero-section h1{
+font-size: 1.4rem;
+}
+#hero-content p{
+    font-size: 18px;
+    }
+
+.summary-content img{
+        width: 100%;
+        height: auto;
+    }
+}
+
