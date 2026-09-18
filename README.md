@@ -1,5 +1,29 @@
 # T_Budeli_ST105292904_PowerWise_Revolutions_SA_wede5020_poe
 
+# PowerWise Revolutions SA #
+A responsive website for PowerWise Revolutions SA, helping South African
+households use electricity more efficiently and cut costs.
+
+## Pages for the website
+Home, About Us, Products, Services, Inquiry, Contact Us, Electricity Saving Tips
+
+## Tech Used
+HTML5, CSS3 (Flexbox, Grid, media queries)
+
+## Colour Scheme
+- #1b4d3e — primary dark green
+- #2f7a5c — accent / hover states
+- #f2f8f5 — light section background
+- #ffffff — body text
+
+### Part 2 - 18/09/2026
+#### Fixed (from Part 1 feedback)
+- Closed unclosed tags (nav, li, ul, section elements)
+- Fixed broken nav link: contacts.html for  contact.html
+- Fixed image path in about_us.html that was pointing to a local folder structure
+- Fixed empty font-style declaration in .hero-section
+
+
 ---
 
 # Project Title: 
