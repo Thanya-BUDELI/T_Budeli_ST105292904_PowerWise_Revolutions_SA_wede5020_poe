@@ -1,8 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<!-- according to claude AI, lang tells browsers and search engines thatthe page is in english -->
+<html lang="en">
 <head>
-    <title>Index</title>
+<!-- charset makes special characters display correctly  -->
+ <meta charset = "UTF-8">
+
+  
+
+
+   <!-- viewport makes the page fit phone screens -->
+    <META NAME = "viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- SEO: unique title tag, meta description and keywords for every page -->
+         <!-- when users search for anything related to the website, my website appears as a result  -->
+    <title>PowerWise Revolutions SA</title>
+    <meta name="description" content="PowerWise Revolutions SA helps South African households save electricity with simple reports, smart meters, energy assessments and practical saving tips.">
+    <meta name="keywords" content="electricity saving tips, save electricity South Africa, smart meter, prepaid electricity, reduce electricity bill, energy efficiency, PowerWise">
+    <meta name="author" content="Thanya Budeli">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1b4d3e">
+   
+    
 <!-- linking this to the CSS file from the html code -->
 <link rel="stylesheet" href="CSS/style.css" />
 
@@ -10,6 +28,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<!-- links JS file and then defer waits untill the page has loaded -->
+ <script src="JS/script.js" defer></script>
 </head>
 
 
@@ -22,7 +44,7 @@
 
             <!-- Website title -->
             <h1>PowerWise Revolutions SA</h1>
-            <!-- navigation tab -->
+            <!-- navigation tab list which links to other website pages.-->
             <nav>
 
     <ul>
@@ -59,49 +81,78 @@
 
 </nav>
 
-        </div>
+     </div>
     </header>
-
+<!-- The main area holds the unique content for this page. -->
     <main>
+      <!-- The hero is the first large introduction visitors see. -->  
         <section class="hero-section">
+            <!-- pt3, the greeting is written here by the showGreeting() method in script.js -->
+              <h3 id="greeting"></h3>
+            <br>
             <h1>Welcome to PowerWise Revolutions SA</h1>
             <p>Discover smart ways to save power and cut costs.</p>
+            <!-- pt3. i decided to move the second hero section and merge them -->
+             <p>We are a leading provider of innovative solutions in the energy sector.</p>
+
+             
+
+              <!-- part 3: the text turns red when the button is clicked -->
+               <p id="demo">this text will turn red.</p>
+               <button onclick="changeColor()">Change colour</button>
         </section>
 
-        <!-- section divider -->
-         <br class="section-divider">
-        <section id="intro-section">
-            <br>
-            <h2>Why choose PowerWise?</h2>
-            <p>Explore our Electricity Saving Tips, Services
-                 and Products and find out why</p>
-        </section>
         
-        <section id="hero-section">
-         <!-- Hero Section -->
+        
+        
+
+         <!-- PART 3: These cards explain a few reasons to choose PowerWise. -->
+        <section class="container section">
+            <h2>Why choose PowerWise?</h2>
+            <p>
+                Explore our <a href="saving-tips.html">electricity saving tips</a>,
+                 <a href="services.html">services</a>
+                  and <a href="products.html">products</a> and find out why.
+                </p>
+           
+            <article class="card">
+            <br>
+            <h3>Simple reports</h3>
+            <p>No complicated graphs. We explain your usage in a way that is easy to understand and follow.</p>
+            </article>
 
 
-        <div id="hero-content">
-            <h2></h2>
-            <!-- this is a shortcut to put your hero-section content
-             created by using div# + enter -->
-            
-<p>We are a leading provider of innovative solutions in the energy sector.</p>
-            
-        </div>
+            <article class="card">
+               <br>
+            <h3>Practical savings</h3>
+                <p>Easy, low cost ways to reduce your monthly electricity bill without changing how you live.</p>
+            </article>
+
+
+            <article class="card">
+                <br>
+                 <h3>Made for Mzansi</h3>
+                 <p>Built for South African households, including prepaid customers and first time smart meter users.</p>
+                 <br>
+             </article>
         </section>
+
+
        <br>
+
+       <!-- this section gives a short summary of the organization -->
          <section id="Summary-section">
             <div id="Summary-section">
                 <!-- Summary section -->
             <h2>We Are a Leading Provider of energy usage solutions</h2>
-            <!-- <img src="Images\Screenshot 2026-08-14 160321edit.png"> -->
+             <img src="Images\Screenshot 2026-08-14 160321edit.png">
             <p>Helping South African households use electricity more efficiently
         and make smarter energy decisions.</p>
             </div>
         </section>
           </main>
 
+          <!--the footer which is the closing area at the buttom of the page -->
     <footer>
          
     </footer>
