@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ZA">
 
 <head>
-    <title>Inquiry</title>
+    <meta charset="UTF-8">
+    <!-- This viewport setting helps the page fit phone screens. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerWise Inquiry</title>
+    <meta name="description" content="Ask PowerWise Revolutions SA about its products, services and household energy advice.">
+    <meta name="keywords" content="PowerWise inquiry, electricity monitor, energy services South Africa">
+    <meta name="author" content="Thanya Budeli">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="CSS/style.css" />
 
     <!-- the following links have to do with font style -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- This connects the page to the shared JavaScript file. -->
+    <script src="JS/script.js" defer></script>
 </head>
 
 <body>
@@ -24,9 +34,7 @@
                 <!-- unordered list:usually represented in bullet points -->
             
             <li>
-                <!-- li refers to list item which is a single item in the list -->
                 <a href="Index.html">Home</a>
-                <!-- "a" refers to anchor tag -->
             </li>
 
             <li>
@@ -59,22 +67,33 @@
     </header>
     <main>
         <section>
-            <h2>Inquiry Form</h2>
-         <form action="submit_inquiry" method="post">
-                <label for="Fullname">Full Name and Surname:</label>
-                <input type="text" id="Fullname" name="Fullname" required><br><br>
+           <form id="inquiry-form" novalidate>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+    <label for="Fullname">Full Name and Surname:</label> <!-- the words next to the box -->
+    <input type="text" id="Fullname" name="Fullname"> <!-- the box for the name -->
+    <span class="error" id="name-error"></span> <!-- the red message appears here, empty for now -->
+    <br><br>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required><br>
+    <label for="email">Email:</label> <!-- the words next to the box -->
+    <input type="email" id="email" name="email"> <!-- the box for the email -->
+    <span class="error" id="email-error"></span> <!-- the red message appears here -->
+    <br><br>
 
-                <label for="Inquiry">Inquiry:</label><br>
-                <textarea id="Inquiry" name="Inquiry" rows="4" cols="50" required></textarea><br><br>
+    <label for="phone">Phone Number:</label> <!-- the words next to the box -->
+    <input type="tel" id="phone" name="phone"> <!-- the box for the phone number -->
+    <span class="error" id="phone-error"></span> <!-- the red message appears here -->
+    <br><br>
 
-                <input type="submit" value="Submit">
-         </form>
+    <label for="Inquiry">Inquiry:</label><br> <!-- the words above the big box -->
+    <textarea id="Inquiry" name="Inquiry" rows="4" cols="50"></textarea> <!-- the big box for the message -->
+    <span class="error" id="message-error"></span> <!-- the red message appears here -->
+    <br><br>
+
+    <button type="submit">Submit</button> <!-- the button that sends the form -->
+</form>
+
+<!-- the thank you message, hidden until the form is filled in correctly -->
+<p id="form-success" hidden></p>
         </section>
         
         <br>
@@ -111,7 +130,7 @@
 
                     <strong>Q: What types of inquiries can I make?</strong>
                      <pre><strong>A:</strong>You can inquire about our products, services, pricing, and many more.</pre> 
-                </li>
+               
             </ul>
         </section>
     </main>
