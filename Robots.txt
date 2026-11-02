@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sunny-piroshki-cfd9cc.netlify.app/sitemap.xml
