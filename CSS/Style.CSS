@@ -1,9 +1,15 @@
-*
 /*
 WHAT IS DONE HERE APPLIES TO THE WHOLE WEBSITE
 */
-
+/* 
+another feedback fix includes: images shrink to fit small screens */
 /*This cleans up the default spacing and sets up default font*/
+img {
+    max-width: 100%;
+    height:auto;
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -204,7 +210,7 @@ hr.section-divider{
 
 /*EVERYTHING IN THE about_us page*/
 
-#about_us{
+#About-PowerWise-Revolutions-SA{
     margin: 10px;
     padding: 10px;
     background-color: rgb(10, 68, 10);
@@ -220,14 +226,7 @@ hr.section-divider{
     
 }
 
-.summary-content img{
-    width: 40%;
-    height: 4%;
-    gap: 50px;
-    margin: 25px;
-    background-image: url(../Images/Screenshot\ 2026-08-14\ 160252.png);
-    background-size: cover;
-}
+
 
 .Social-media-links{
     text-align: center;
@@ -290,7 +289,7 @@ input[type="submit"]:active{
     background-color: #16261f;
 }
 
-/*Responsive design- tablet*/
+/*Responsive design tablet*/
 @media (max-width: 766px){
 /*nav links stack vertically instead of side by side*/
 nav ul{
@@ -326,7 +325,7 @@ margin: 10px;
 padding: 15px;
  }
 /*cards go down to a single column*/
-main section ul
+main section ul,
 .services-list{
  grid-template-columns: 1fr;
  }
@@ -344,3 +343,626 @@ font-size: 1.4rem;
     }
 }
 
+/*this is so that the hero section becomes
+ smaller to fit on phone or any other smaller screens*/
+.hero-section h1{
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+/* concerning part 3 for the inquiry page, the red error messages under the boxes */
+.error {
+    display: block;      /* put each message on its own line */
+    color: #ff6b6b;      /* red-ish colour that is readable on your dark background */
+    font-size: 0.9rem;   /* slightly smaller than normal text */
+}
+
+/*concerning part 3 for the inquiry page, the green thank you message */
+#form-success {
+    font-weight: 600;    /* bold text */
+    color: #9fe0b8;      /* light green so people see it worked */
+}
+
+
+/* PART 3: modern styling added after the original styles. */
+
+/* Keep the original green colours and give the page more breathing room. */
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+    background: #edf3ef;
+}
+
+/* Make the original header look like a clean navigation bar. */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin: 12px auto;
+    padding: 14px 4%;
+    width: 96%;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(20, 50, 35, 0.14);
+}
+
+header > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+header h1 {
+    margin: 0;
+    color: #1b4d3e;
+    font-size: 1.35rem;
+}
+
+/* Make the navigation links easier to read and click. */
+header nav {
+    background-color: transparent;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+header nav ul li {
+    height: auto;
+    margin: 0;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 9px 12px;
+    border-radius: 7px;
+    color: #1b4d3e;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #e6f3e8;
+    color: #123b2c;
+}
+
+/* The menu button is created by JavaScript and only appears on small screens. */
+.mobile-menu-toggle {
+    display: none;
+    padding: 9px 14px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #1b4d3e;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Give the main page content a neat, centered width. */
+main {
+    width: min(1100px, 92%);
+    margin: 25px auto;
+    padding: 0;
+    align-items: stretch;
+}
+
+/* Turn the original page sections into clean, readable content panels. */
+main section {
+    margin: 18px 0;
+    padding: clamp(20px, 4vw, 36px);
+    border: 1px solid #e0e9e2;
+    border-radius: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 7px 22px rgba(20, 50, 35, 0.09);
+}
+
+main section h2,
+main section h3 {
+    margin-bottom: 12px;
+    color: #1b4d3e;
+}
+
+main section p {
+    line-height: 1.7;
+}
+
+/* Give the home page welcome section a stronger first impression. */
+main section.hero-section {
+    padding: clamp(38px, 7vw, 76px) 24px;
+    border: 0;
+    background: linear-gradient(135deg, #1b4d3e, #347958);
+    color: #ffffff;
+    text-align: center;
+}
+
+main section.hero-section h1,
+main section.hero-section h3,
+main section.hero-section p {
+    color: #ffffff;
+}
+
+main section.hero-section h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+main section.hero-section button {
+    margin: 12px 5px;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #ffffff;
+    color: #1b4d3e;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+main section.hero-section button:hover {
+    background-color: #e6f3e8;
+}
+
+/* Make the home-page cards look like separate items. */
+.card {
+    padding: 20px;
+    border: 1px solid #d7e5da;
+    border-radius: 11px;
+    background-color: #f8fbf8;
+    box-shadow: 0 4px 12px rgba(20, 50, 35, 0.06);
+}
+
+.card h3 {
+    color: #1b4d3e;
+}
+
+/* Style the search and category controls on the products and services pages. */
+.product-search-controls,
+main input[type="text"],
+main input[type="email"],
+main input[type="tel"],
+main select,
+main textarea {
+    max-width: 100%;
+}
+
+.product-search-controls {
+    width: min(1100px, 92%);
+    margin: 20px auto;
+    padding: 18px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 18px rgba(20, 50, 35, 0.09);
+}
+
+.product-search-controls input,
+.product-search-controls select,
+main input[type="text"],
+main input[type="email"],
+main input[type="tel"],
+main select,
+main textarea {
+    padding: 10px 12px;
+    border: 1px solid #b9cabe;
+    border-radius: 7px;
+    background-color: #ffffff;
+    color: #24352c;
+    font: inherit;
+}
+
+.product-search-controls input,
+.product-search-controls select {
+    margin: 6px 8px 6px 0;
+}
+
+/* Make the contact map large enough to use. */
+.map-box {
+    width: 100%;
+    height: 350px;
+    margin: 15px 0;
+    border: 2px solid #d7e5da;
+    border-radius: 10px;
+}
+
+/* Make form feedback easy to notice. */
+#form-success,
+#contact-form-status,
+#product-count,
+#service-count {
+    display: block;
+    margin: 12px 0;
+    font-weight: 700;
+}
+
+/* On smaller screens, stack the navigation and controls. */
+@media (max-width: 800px) {
+    header > div {
+        flex-wrap: wrap;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+    }
+
+    header nav.menu-open {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header nav ul li a {
+        padding: 11px 12px;
+    }
+
+    .product-search-controls input,
+    .product-search-controls select {
+        width: 100%;
+    }
+}
+
+/* Fit the map and sections to very small screens. */
+@media (max-width: 480px) {
+    header {
+        width: 94%;
+        margin: 8px auto;
+        padding: 12px;
+    }
+
+    main {
+        width: 94%;
+        margin: 16px auto;
+    }
+
+    main section {
+        padding: 18px;
+    }
+
+    .map-box {
+        height: 270px;
+    }
+}
+
+
+/* Keep the site header white with dark-green text. */
+header {
+    background-color: #ffffff;
+    color: #1b4d3e;
+}
+
+header h1,
+header nav ul li a {
+    color: #1b4d3e;
+}
+
+/* The hero is green, so its text stays white. */
+main section.hero-section {
+    background: linear-gradient(135deg, #1b4d3e, #347958);
+}
+
+main section.hero-section h1,
+main section.hero-section h3,
+main section.hero-section p {
+    color: #ffffff;
+}
+
+/* Remove the extra gap created by this divider on the homepage. */
+br.section-divider {
+    display: none;
+}
+
+
+/* Make the feature cards readable and line them up. */
+.container.section {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.container.section > h2,
+.container.section > p {
+    grid-column: 1 / -1;
+}
+
+.container.section .card {
+    display: block;
+    width: auto;
+    margin: 0;
+    color: #26382e;
+}
+
+.container.section .card p {
+    color: #45564b;
+}
+
+/* Keep these links green instead of browser-purple. */
+.container.section a:link,
+.container.section a:visited {
+    color: #17633e;
+}
+
+#intro-section p {
+    color: #45564b;
+}
+
+/* Stack the cards on smaller screens. */
+@media (max-width: 800px) {
+    .container.section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Make text readable inside the white sections on every page. */
+main section p,
+main section li,
+main section pre {
+    color: #24352c;
+}
+
+/* The welcome section has a green background, so its text stays white. */
+main section.hero-section p,
+main section.hero-section h1,
+main section.hero-section h3 {
+    color: #ffffff;
+}
+
+
+/* Keep the contact form labels and words dark on the white section. */
+main section form {
+    color: #1b4d3e;
+}
+
+main section form label {
+    display: block;
+    margin: 12px 0 6px;
+    color: #1b4d3e;
+    font-weight: 600;
+}
+
+/* Give the contact form boxes a readable size and text colour. */
+main section form input:not([type="submit"]),
+main section form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 520px;
+    padding: 10px 12px;
+    border: 1px solid #b7c9bd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #24352c;
+    font: inherit;
+}
+
+main section form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Make the submit button match the rest of the website. */
+main section form input[type="submit"] {
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #1b4d3e;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+main section form input[type="submit"]:hover {
+    background-color: #2f7a5c;
+}
+
+/* The form status appears on a white panel, so use dark green text. */
+#contact-form-status {
+    color: #1b4d3e;
+}
+
+
+
+/* Arrange the service cards in columns on wider screens. */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+/* Style each service card. */
+.service-card {
+    padding: 20px;
+    border: 1px solid #d5e3d9;
+    border-radius: 10px;
+    background-color: #f4f8f5;
+    color: #1b4d3e;
+}
+
+.service-card h3,
+.service-card p {
+    color: #1b4d3e;
+}
+
+/* Put the cards in two columns on tablets and one column on phones. */
+@media (max-width: 766px) {
+    .services-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Keep the text readable on the dark About section. */
+#About-PowerWise-Revolutions-SA h2,
+#About-PowerWise-Revolutions-SA pre,
+#About-PowerWise-Revolutions-SA p {
+    color: #ffffff;
+}
+
+/* Make the About paragraph use the same font as the rest of the website. */
+#About-PowerWise-Revolutions-SA .summary-content pre {
+    flex: 1 1 500px;
+    font-family: inherit;
+    line-height: 1.7;
+    white-space: pre-wrap;
+}
+
+/* Let the social links use a full row instead of a thin column. */
+#About-PowerWise-Revolutions-SA .summary-content {
+    flex-wrap: wrap;
+}
+
+#About-PowerWise-Revolutions-SA .summary-content > br {
+    display: none;
+}
+
+#About-PowerWise-Revolutions-SA .Social-media-links {
+    flex: 1 1 100%;
+    text-align: left;
+}
+
+#About-PowerWise-Revolutions-SA .Socials {
+    display: flex;
+    gap: 18px;
+}
+
+/* Make the social media icons visible on the dark green background. */
+#About-PowerWise-Revolutions-SA .Socials a {
+    color: #ffffff;
+}
+
+#About-PowerWise-Revolutions-SA .Socials a:hover {
+    color: #b7e4c7;
+}
+
+
+
+
+
+/* Show product cards in neat columns. */
+.product-list-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin: 20px 0;
+}
+
+.product-card {
+    padding: 20px;
+    border: 1px solid #d7e5da;
+    border-radius: 11px;
+    background-color: #f8fbf8;
+    color: #24352c;
+}
+
+.product-card h3 {
+    color: #1b4d3e;
+}
+
+/* Keep the product cards readable on smaller screens. */
+@media (max-width: 800px) {
+    .product-list-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .product-list-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Keep the Home heading from leaving “SA” by itself. */
+.hero-section h1 {
+    font-size: clamp(2.2rem, 3.2vw, 3rem);
+    line-height: 1.15;
+}
+
+/* Reduce the large gaps between fields on the Inquiry page. */
+#inquiry-form br {
+    display: none;
+}
+
+#inquiry-form label {
+    display: block;
+    margin: 12px 0 5px;
+}
+
+#inquiry-form input,
+#inquiry-form textarea {
+    display: block;
+    width: min(100%, 520px);
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/* Keep the product count visible above the cards. */
+#product-count {
+    display: block !important;
+    color: #24352c !important;
+    margin: 12px 0;
+}
+
+/* Show the products in a neat grid. */
+#product-list {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Make sure each product card and its text can be seen. */
+#product-list .product-card,
+#product-list .product-card.card-reveal {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+    padding: 20px;
+    border: 1px solid #d7e5da;
+    border-radius: 11px;
+    background-color: #f8fbf8;
+    color: #24352c !important;
+}
+
+#product-list .product-card h3 {
+    color: #1b4d3e !important;
+}
+
+#product-list .product-card p {
+    color: #24352c !important;
+}
+
+/* Stack the cards on smaller screens. */
+@media (max-width: 800px) {
+    #product-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    #product-list {
+        grid-template-columns: 1fr;
+    }
+}
