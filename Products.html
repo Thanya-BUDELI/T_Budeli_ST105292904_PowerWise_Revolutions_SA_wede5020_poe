@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ZA">
 
 <head>
-    <title>products</title>
+    <meta charset="UTF-8">
+    <!-- This viewport setting helps the page fit phone screens. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerWise Products</title>
+    <meta name="description" content="Explore PowerWise smart meter devices, emergency monitoring devices, product support and accessories.">
+    <meta name="keywords" content="smart meter devices, electricity monitor, PowerWise products, South Africa">
+    <meta name="author" content="Thanya Budeli">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="CSS/style.css" />
 
     <!-- the following links have to do with font style -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- This connects the page to the shared JavaScript file. -->
+    <script src="JS/script.js" defer></script>
 </head>
 
 <body>
@@ -29,143 +39,66 @@
                 <!-- "a" refers to anchor tag -->
             </li>
 
-            <li>
-                <a href="about_us.html">about_us</a>
-            </li>
+     <li>
+        <a href="about_us.html">about_us</a>
+        </li>
 
-            <li>
-                <a href="services.html">services</a>
-            </li>
+     <li>
+    <a href="services.html">services</a>
+    </li>
 
-            <li>
-                <a href="inquiry.html">Inquiry</a>
-            </li>
+<li>
+    <a href="inquiry.html">Inquiry</a>
+    </li>
 
-            <li>
-                <a href="products.html">Products</a>
-            </li>
+<li>
+    <a href="products.html">Products</a>
+    </li>
 
-            <li>
-                <a href="contact.html">Contact Us</a>
-            </li>
+<li>
+    <a href="contact.html">Contact Us</a>
+</li>
 
-            <li>
-                <a href="ElectricitySavingTips.html">Electricity Saving Tips</a>
-            </li>
+<li>
+ <a href="ElectricitySavingTips.html">Electricity Saving Tips</a>
+    </li>
 
-            </ul>
+</ul>
 
-            </nav>
-        </div>
-    </header>
+</nav>
+</div>
+</header>
 
-
-    <a>
-            Search for products:
-            <input type="text" placeholder="Search products...">
-        </a>
     <main>
-        
-            <img src="Images/ChatGPT Image Aug 14, 2026, 08_36_06 PM.png" width="600" height="700">
+        <main>
+        <section class="product-search-controls">
+<h2>Our Products</h2>
+<p>Search our products or choose a category to find what you need.</p>
 
-        <section>
-            <!-- Smart meter devices -->
-            <h2>Smart meter devices:</h2>
-            
-            <ul>
-                <li>
-                    <h3>PowerWise SmartMeter 1000</h3>
-                    <p>A prepaid electricity monitoring device that displays
-                    household electricity consumption.</p>
-                </li>
+ <!-- Part 3: visitors can search for a product and choose its category. -->
+    <label for="product-search">Search for products:</label>
+ <input type="text" id="product-search" placeholder="Search products...">
 
-                <li>
-                    <h3>PowerWise Consumption Scanner</h3>
-                    <p>A device that scans how much power is being consumed in real-time.</p>
-                </li>
-
-                <li>
-                    <h3>PowerWise Regulator</h3>
-                    <p>A device that picks up on how much power is being used
-                    and regulates the amount of power being used to prevent overconsumption.</p>
-                </li>
-
-            </ul>
+<label for="product-category">Choose category:</label>
+    <select id="product-category">
+<option value="all">All categories</option>
+ <option value="Smart meter devices">Smart meter devices</option>
+ <option value="Emergency monitoring devices">Emergency monitoring devices</option>
+    <option value="Product support">Product support</option>
+    <option value="Accessories">Accessories</option>
+    </select>
         </section>
 
         <section>
-            <!-- Emergency Monitoring devices -->
+<!-- JavaScript updates this count and empty-search message. -->
+<p id="product-count" aria-live="polite"></p>
+ <p id="no-results" hidden>No products match your search.</p>
 
-            <h2>Emergency Monitoring devices:</h2>
-            <ul>
-                <li>
-                    <h3>PowerWise Emergency Alert System</h3>
-                    <p>A device that monitors the power supply and alerts you in case of an emergency.</p>
-                </li>
-
-                <li>
-                    <h3>PowerWise Emergency Power Supply</h3>
-                    <p>A device that provides backup power supply in case of a power outage.</p>
-                </li>
-
-                <li>
-                    <h3>PowerWise Monitoring Device</h3>
-                    <p>monitors how much you will be billed at the end of the month based on your powerusage.</p>
-                </li>
-            </ul>
-            </section>
-
-            <section>
-                <!-- Product Support -->
-                <h2>Product Support:</h2>
-                <ul>
-                    <li>
-                        <h3>PowerWise Support Center</h3>
-                        <p>A support center that provides assistance and troubleshooting for PowerWise products.</p>
-                    </li>
-
-                    <li>
-                        <h3>PowerWise Online Support</h3>
-                        <p>An online support platform that provides assistance and troubleshooting for PowerWise products.</p>
-                    </li>
-
-                    <li>
-                        <h3>PowerWise Product Manuals</h3>
-                        <p>Product manuals that provide detailed information on how to use PowerWise products.</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <!-- Accessories -->
-                <h2>Accessories:</h2>
-                <ul>
-                    <li>
-                        <h3>PowerWise Power Cord</h3>
-                        <p>A power cord that connects your devices to the PowerWise monitoring system.</p>
-                    </li>
-
-                    <li>
-                        <h3>PowerWise Mounting Bracket</h3>
-                        <p>A bracket that allows you to mount the PowerWise monitoring device on a wall or panel.</p>
-                    </li>
-
-                    <li>
-                        <h3>PowerWise Protective Case</h3>
-                        <p>A case that protects the PowerWise monitoring device from damage and environmental factors.</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                
-                <ul>
-                    <li>
-                     <h3>PowerWise Support Center</h3>
-                        <p>A support center that provides assistance and troubleshooting for PowerWise products.</p>
-                    </li>
-                </ul>
-            </section>
+ <!-- JavaScript creates the product cards in this space. -->
+    <div id="product-list" class="product-list-grid" aria-live="polite"></div>
+    <noscript>Please turn on JavaScript to view the product list.</noscript>
+        </section>
+    </main>
     </main>
 
     <footer>
