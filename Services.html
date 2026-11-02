@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ZA">
 
 <head>
-    <title>services</title>
+    <meta charset="UTF-8">
+    <!-- This viewport setting helps the page fit phone screens. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerWise Services</title>
+    <meta name="description" content="Explore PowerWise monitoring, installation, maintenance and support services.">
+    <meta name="keywords" content="household energy services, electricity monitoring, energy advice South Africa">
+    <meta name="author" content="Thanya Budeli">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="CSS/style.css" />
 
     <!-- the following links have to do with font style -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- This connects the page to the shared JavaScript file. -->
+    <script src="JS/script.js" defer></script>
 </head>
 
 <body>
@@ -23,66 +33,40 @@
             <ul>
                 <!-- unordered list:usually represented in bullet points -->
             
-            <li>
-                <!-- li refers to list item which is a single item in the list -->
-                <a href="Index.html">Home</a>
-                <!-- "a" refers to anchor tag -->
-            </li>
-
-            <li>
-                <a href="about_us.html">about_us</a>
-            </li>
-
-            <li>
-                <a href="services.html">services</a>
-            </li>
-
-            <li>
-                <a href="inquiry.html">Inquiry</a>
-            </li>
-
-            <li>
-                <a href="products.html">Products</a>
-            </li>
-
-            <li>
-                <a href="contact.html">Contact Us</a>
-            </li>
-
-            <li>
-                <a href="ElectricitySavingTips.html">Electricity Saving Tips</a>
-                </li>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="about_us.html">about_us</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="inquiry.html">Inquiry</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="ElectricitySavingTips.html">Electricity Saving Tips</a></li>
             </ul>
             </nav>
-
         </div>
     </header>
     <main>
         <section>
-            <h1>Services</h1>
-            <p>We offer a range of services to help you manage your power consumption and ensure reliable energy supply.</p>
-            <hr>
-            <br>
-            <ul>
-                <h2>1. Monitoring Services</h2>
-         <p>Our monitoring services provide real-time data on your energy usage,
-         helping you identify areas for improvement and optimize your power consumption.</p>
-            </ul>
-         <br>
-         <br>
-         
-         
+            <h2>Services</h2>
 
-         <h2>2. Installation Services</h2>
-                <p>We provide professional installation services for all our power management solutions.</p>
-        <br>
-         <br>
-         
-         
-                <h2>3. Maintenance Services and support</h2>
-                <p>Our maintenance services ensure that your power management systems are always running efficiently.</p>
-          
-            
+            <!-- Part 3: visitors can search for a service and choose its category. -->
+            <label for="service-search">Search services:</label>
+            <input type="text" id="service-search" placeholder="Search services...">
+
+            <label for="service-category">Choose category:</label>
+            <select id="service-category">
+                <option value="all">All categories</option>
+                <option value="monitoring">Monitoring</option>
+                <option value="installation">Installation</option>
+                <option value="support">Support</option>
+            </select>
+
+            <p id="service-count" aria-live="polite"></p>
+            <p id="service-empty" hidden>No services match your search.</p>
+
+            <p>We offer a range of services to help you manage your power consumption and ensure reliable energy supply.</p>
+
+            <!-- JavaScript creates the service cards in this space. -->
+            <div id="service-list" class="services-list" aria-live="polite"></div>
         </section>
     </main>
 
@@ -90,5 +74,4 @@
         
     </footer>
 </body>
-
 </html>
