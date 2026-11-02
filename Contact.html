@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ZA">
 
 <head>
-    <title>contact</title>
+    <meta charset="UTF-8">
+    <!-- This viewport setting helps the page fit phone screens. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact PowerWise Revolutions SA</title>
+    <meta name="description" content="Contact PowerWise Revolutions SA with questions about household electricity, services and products.">
+    <meta name="keywords" content="contact PowerWise, household energy advice, South Africa electricity">
+    <meta name="author" content="Thanya Budeli">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="CSS/style.css" />
 
     <!-- the following links have to do with font style -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet is the map tool used for the interactive map below. -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+
+    <!-- This connects the page to the shared JavaScript file. -->
+    <script src="JS/script.js" defer></script>
 </head>
 
 <body>
     <header>
         <!-- header represents top section of the webpage -->
         <div>
-            <!-- Div is PowerWise Revolutions SAa divider used to separate sections of the html content -->
+            <!-- Div is a divider used to separate sections of the html content -->
             <h1>PowerWise Revolutions SA</h1>
             <nav>
                 <!-- navigation -->
@@ -24,9 +38,7 @@
                 <!-- unordered list:usually represented in bullet points -->
             
             <li>
-                <!-- li refers to list item which is a single item in the list -->
                 <a href="Index.html">Home</a>
-                <!-- "a" refers to anchor tag -->
             </li>
 
             <li>
@@ -89,10 +101,18 @@ please feel free to reach out to us using the following contact information:</pr
              </li>
         </ul>
         </section>
+
+        <!-- Part 3: this map marks an approximate service area, not a business address. -->
+        <section>
+            <h2>Service area</h2>
+            <p>The marker shows an approximate point in South Africa. It is not a verified PowerWise office.</p>
+            <div id="map" class="map-box" aria-label="Map showing an approximate point in South Africa"></div>
+            <p>Map tiles by <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</p>
+        </section>
     
         <section>
             <h2>Inquiry Form</h2>
-         <form action="submit_inquiry" method="post">
+         <form id="contact-form" novalidate>
                 <label for="Fullname">Full Name and Surname:</label>
                 <input type="text" id="Fullname" name="Fullname" required><br><br>
 
@@ -102,6 +122,7 @@ please feel free to reach out to us using the following contact information:</pr
                 <label for="Inquiry">Inquiry:</label><br>
                 <textarea id="Inquiry" name="Inquiry" rows="4" cols="50" required></textarea><br><br>
 
+                <p id="contact-form-status" aria-live="polite"></p>
                 <input type="submit" value="Submit">
          </form>
         </section>
